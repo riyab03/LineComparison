@@ -8,7 +8,15 @@ public class Main {
         Scanner sc=new Scanner(System.in);
 
         Geometry line=new Geometry();
-        line.LengthLine();
+        System.out.println("Dimensions for Line 1");
+        double l1=line.LengthLine();
+        System.out.println("Length for Line 1: "+l1 );
+        System.out.println("Dimensions for Line 2");
+        double l2=line.LengthLine();
+        System.out.println("Length for Line 2: "+l2 );
+
+        line.Equality(l1,l2);
+
 
     }
 }
