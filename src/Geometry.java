@@ -20,8 +20,14 @@ public class Geometry {
     }
 
     public void Equality(double l1,double l2){
-        if(Objects.equals(l1,l2)==true) System.out.println("Lines are Equal");
-        else System.out.println("Lines are Not Equal");
+        if(Objects.equals(l1,l2)==true) System.out.println("Checking Equality: Lines are Equal");
+        else System.out.println("Checking Equality: Lines are Not Equal");
+    }
+
+    public void Comparing(double l1,double l2){
+        if(Double.compare(l1,l2)==0) System.out.println("Comparing lines: Lines are Equal");
+        else if(Double.compare(l1,l2)>0) System.out.println("Comparing Lines: Line 1 is greater");
+        else  System.out.println("Comparing Lines: Line 2 is greater");
     }
 
 
