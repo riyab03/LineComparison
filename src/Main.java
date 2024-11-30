@@ -17,7 +17,7 @@ public class Main {
 
         line.Equality(l1,l2);
         line.Comparing(l1,l2);
-
+        line.Compareto(l1,l2);
 
     }
 }

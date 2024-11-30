@@ -1,4 +1,4 @@
-import java.lang.Math;
+import java.lang.*;
 import java.util.*;
 import java.util.Scanner;
 
@@ -19,16 +19,22 @@ public class Geometry {
         return Math.sqrt(a);
     }
 
-    public void Equality(double l1,double l2){
+    public void Equality(Double l1,Double l2){
         if(Objects.equals(l1,l2)==true) System.out.println("Checking Equality: Lines are Equal");
         else System.out.println("Checking Equality: Lines are Not Equal");
     }
 
-    public void Comparing(double l1,double l2){
+    public void Comparing(Double l1,Double l2){
         if(Double.compare(l1,l2)==0) System.out.println("Comparing lines: Lines are Equal");
         else if(Double.compare(l1,l2)>0) System.out.println("Comparing Lines: Line 1 is greater");
         else  System.out.println("Comparing Lines: Line 2 is greater");
     }
 
+    public void Compareto(Double l1,Double l2){
+        double len=l1.compareTo(l2);
+        if(len==0) System.out.println("ComparingTo Lines: Both Lines are Equal");
+        else if(len>0) System.out.println("ComparingTo Lines: Line 1 is greater than Line 2");
+        else System.out.println("ComparingTo Lines: Line 2 is greater than Line 1");
+    }
 
 }
